@@ -51,6 +51,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -103,7 +104,7 @@ p {
 
 .subcontainer {
   /* flex-basis */
-  min-width: calc(
+  flex-basis: calc(
     (100% - var(--ident-vertical) * (var(--items)-1)) / var(--items)
   );
 }
@@ -220,14 +221,10 @@ p {
   | Features sections #2
   |=================================
 **/
-/* .features {
-  display: flex;
-  gap: 24px;
-} */
 
-/* .features-section {
-  padding: 96px 0;
-} */
+.low-marg {
+  margin-bottom: 8px;
+}
 
 .features-title,
 .projects-tittle {
@@ -238,24 +235,6 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--secondary-text-color);
-}
-
-/* .features .subcontainer {
-  width: calc((100% - 3 * 24px) / 4);
-} */
-
-/* Tablet screen */
-@media only screen and (min-width: 768px) {
-  .subcontainer {
-    --items: 2;
-  }
-}
-
-/* Desctop screen */
-@media only screen and (min-width: 1158px) {
-  .subcontainer {
-    --items: 4;
-  }
 }
 
 /* .team-section .subcontainer {
@@ -274,6 +253,23 @@ p {
   border-radius: 4px;
 }
 
+/* Tablet screen */
+@media only screen and (min-width: 768px) {
+  .subcontainer {
+    --items: 2;
+  }
+}
+
+/* Desctop screen */
+@media only screen and (min-width: 1158px) {
+  .subcontainer {
+    --items: 4;
+  }
+  .icon-box {
+    display: flex;
+  }
+}
+
 /**
   |==============================
   | What we are doing Section #3
@@ -284,14 +280,14 @@ p {
   padding-bottom: 120px;
 }
 
-.uppertitle,
+.subtitle,
 .doing-tiltle,
 .team-title,
 .customers-title {
-  margin-bottom: 72px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
