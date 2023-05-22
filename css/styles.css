@@ -136,36 +136,8 @@ p {
   | Hero section #1
   |=================================
 **/
-
-.hero-tittle {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 72px;
-  max-width: 496px;
-}
-
-/* Tablet screen */
-@media only screen and (min-width: 768px) {
-  .hero-tittle {
-    margin-bottom: 36px;
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .hero-tittle {
-    margin-bottom: 48px;
-  }
-}
-
 .hero-box {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto;
   background-color: var(--secondary-text-color);
   background-image: linear-gradient(
@@ -177,7 +149,45 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 188px 0;
+  padding: 112px 0;
+}
+
+.hero-tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 72px;
+  max-width: 320px;
+}
+
+/* Tablet screen */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .hero-tittle {
+    font-size: 56px;
+    line-height: 1.07px;
+    margin-bottom: 36px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+  .hero-box {
+    padding: 188px 0;
+  }
+  .hero-tittle {
+    margin-bottom: 48px;
+  }
 }
 
 /* Button on hero */
