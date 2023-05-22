@@ -86,8 +86,7 @@ p {
 .container {
   min-width: 320px;
   max-width: 428px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 16px;
   margin: 0 auto;
   outline: 2px solid tomato;
   outline-offset: -2px;
@@ -103,24 +102,10 @@ p {
 }
 
 .subcontainer {
-  flex-basis: calc(
+  /* flex-basis */
+  min-width: calc(
     (100% - var(--ident-vertical) * (var(--items)-1)) / var(--items)
   );
-}
-
-/* Tablet screen */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-/* Desctop screen */
-@media only screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
 }
 
 .text {
@@ -131,7 +116,6 @@ p {
 }
 
 .title {
-  padding-top: 96px;
   margin-bottom: 72px;
 
   font-weight: 700;
@@ -142,6 +126,140 @@ p {
   text-align: center;
   text-transform: capitalize;
   color: var(--secondary-text-color);
+}
+
+.section {
+  padding: 96px 0;
+}
+
+/**
+  |=================================
+  | Hero section #1
+  |=================================
+**/
+
+.hero-tittle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 72px;
+  max-width: 496px;
+}
+
+/* Tablet screen */
+@media only screen and (min-width: 768px) {
+  .hero-tittle {
+    margin-bottom: 36px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero-tittle {
+    margin-bottom: 48px;
+  }
+}
+
+.hero-box {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--secondary-text-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 188px 0;
+}
+
+/* Button on hero */
+.button-hero {
+  display: block;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: var(--primary-brand-tcolor);
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  margin-right: auto;
+  margin-left: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--presed-state-color);
+}
+
+/**
+  |=================================
+  | Features sections #2
+  |=================================
+**/
+.features {
+  display: flex;
+  /* gap: 24px; */
+}
+
+.features-section {
+  padding: 96px 0;
+}
+
+.features-title,
+.projects-tittle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+/* .features .subcontainer {
+  width: calc((100% - 3 * 24px) / 4);
+} */
+
+/* Tablet screen */
+@media only screen and (min-width: 768px) {
+  .subcontainer {
+    --items: 2;
+  }
+}
+
+/* Desctop screen */
+@media only screen and (min-width: 1158px) {
+  .subcontainer {
+    --items: 4;
+  }
+}
+
+/* .team-section .subcontainer {
+  min-width: calc((100% - 3 * 24px) / 4);
+  background: #ffffff;
+} */
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+  background: var(--accent-text-color);
+  border-radius: 4px;
 }
 
 /**
@@ -187,8 +305,15 @@ p {
   |============================
 **/
 
-.team-section {
+/* .team-section {
   padding: 120px 0px;
+} */
+
+/* Desctop screen */
+@media only screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
 }
 
 .card-content {
@@ -198,12 +323,33 @@ p {
 }
 
 .card-box {
-  padding: 32px 0px;
+  padding: 32px 16px;
   text-align: center;
 }
 
 .card-box .text {
   margin-bottom: 8px;
+}
+
+/* Tablet screen */
+@media only screen and (min-width: 768px) {
+  .team-section .container {
+    max-width: 768px;
+  }
+  .subcontainer {
+    --items: 2;
+  }
+}
+
+/* Desctop screen */
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+  .subcontainer {
+    --items: 4;
+  }
 }
 
 .socials {
