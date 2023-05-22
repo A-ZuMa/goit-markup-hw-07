@@ -116,7 +116,8 @@ p {
 }
 
 .title {
-  /* margin-bottom: 72px; */
+  margin-bottom: 72px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -344,7 +345,7 @@ p {
 
 /* Tablet screen */
 @media only screen and (min-width: 768px) {
-  .team-section .container {
+  .container {
     max-width: 768px;
   }
   .subcontainer {
