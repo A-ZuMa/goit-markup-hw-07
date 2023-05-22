@@ -116,11 +116,10 @@ p {
 }
 
 .title {
-  margin-bottom: 72px;
-
+  /* margin-bottom: 72px; */
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
   letter-spacing: 0.02em;
 
   text-align: center;
@@ -210,21 +209,23 @@ p {
   | Features sections #2
   |=================================
 **/
-.features {
+/* .features {
   display: flex;
-  /* gap: 24px; */
-}
+  gap: 24px;
+} */
 
-.features-section {
+/* .features-section {
   padding: 96px 0;
-}
+} */
 
 .features-title,
 .projects-tittle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--secondary-text-color);
 }
 
@@ -252,7 +253,7 @@ p {
 } */
 
 .icon-box {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   padding-top: 24px;
