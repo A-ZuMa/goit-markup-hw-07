@@ -224,6 +224,10 @@ p {
   |=================================
 **/
 
+.features-content {
+  width: 396px;
+}
+
 .low-marg {
   margin-bottom: 8px;
 }
@@ -245,7 +249,7 @@ p {
 } */
 
 .icon-box {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 24px;
@@ -257,6 +261,9 @@ p {
 
 /* Tablet screen */
 @media only screen and (min-width: 768px) {
+  .features-content {
+    width: 356px;
+  }
   .subcontainer {
     --items: 2;
   }
@@ -265,22 +272,26 @@ p {
   }
 }
 
+@media only screen and (max-width: 1157px) {
+  .icon-box {
+    display: none;
+  }
+}
+
 /* Desctop screen */
 @media only screen and (min-width: 1158px) {
   .subcontainer {
     --items: 4;
   }
-  .icon-box {
-    display: flex;
+  .features-content {
+    width: 264px;
   }
   .title.low-marg {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
   }
-
   .features-text {
-    /* align-items: baseline; */
     font-weight: 400;
   }
 }
@@ -292,7 +303,7 @@ p {
 **/
 
 .doing-section {
-  display: none;
+  /* display: none; */
   padding-bottom: 120px;
 }
 
@@ -312,9 +323,9 @@ p {
   background-color: var(--box-background-accent);
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (max-width: 1157px) {
   .doing-section {
-    display: inherit;
+    display: none;
   }
 }
 
@@ -336,6 +347,7 @@ p {
 }
 
 .card-content {
+  width: 264px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -352,11 +364,8 @@ p {
 
 /* Tablet screen */
 @media only screen and (min-width: 768px) {
-  /* .container {
-    max-width: 768px;
-  } */
-  .subcontainer {
-    --items: 2;
+  .team-section .cardset {
+    row-gap: 64px;
   }
 }
 
