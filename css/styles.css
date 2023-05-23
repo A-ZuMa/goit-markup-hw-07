@@ -460,7 +460,7 @@ p {
   |=================================
 **/
 
-.footer {
+.footer-section {
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -473,7 +473,7 @@ p {
   background-color: #2e2f42;
 }
 
-.footer .container .logo-fst {
+.footer-section .container .logo-fst {
   display: inline-block;
   text-transform: uppercase;
   margin-bottom: 16px;
