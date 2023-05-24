@@ -69,6 +69,8 @@
 
     codepen.io (приклади по Grid)
 
+    Бібліотека для накладання маски на елементи форми - https://robinherbots.github.io/Inputmask/
+
     Генерація фігур - https://bennettfeely.com/clippy/
     Генерація анімацій -https://animista.net/play/basic/swing/swing-left-bck
                         https://animate.style/
