@@ -586,8 +586,8 @@ p {
   font-size: 12px;
   line-height: 2;
 
-  display: flex;
   width: 398px;
+  display: flex;
   align-items: center;
   letter-spacing: 0.04em;
 
@@ -597,6 +597,31 @@ p {
   border-radius: 4px;
   color: #ffffff;
   background-color: var(--secondary-text-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .email-form-input {
+    width: 264px;
+  }
+  .subscribe-form {
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+  .subcribe-btn {
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-container {
+    gap: 0 0;
+  }
+  .footer-box {
+    margin-right: 120px;
+  }
+  .socials-media {
+    margin-right: 80px;
+  }
 }
 
 .email-form-input::placeholder {
@@ -618,6 +643,7 @@ p {
   flex-direction: row;
   gap: 16px;
   justify-content: center;
+
   min-width: 165px;
   height: 40px;
   padding: 8px 24px;
