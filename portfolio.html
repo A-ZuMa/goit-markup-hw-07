@@ -21,27 +21,35 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header-section">
       <div class="container">
+        <a class="logo-fst link" href="./index.html"
+          >WEB<span class="logo-sec-txt">Studio</span>
+        </a>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
         <nav class="main-nav">
-          <!-- Logo link -->
-          <a class="logo-fst link" href="./index.html"
-            >WEB<span class="logo-sec-txt">Studio</span>
-          </a>
-          <!-- Links to pages -->
           <ul class="nav-menu-list list">
             <li>
-              <a class="nav-menu-link link" href="./index.html">Studio</a>
+              <a class="nav-menu-link link active" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li>
-              <a class="nav-menu-link link active" href="./portfolio.html"
+              <a class="nav-menu-link link" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
             <li><a class="nav-menu-link link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <!-- Address -->
         <address class="contacts">
           <ul class="contacts-list list">
             <li>
@@ -280,7 +288,7 @@
       </section>
     </main>
     <!-- Footer section -->
-    <footer class="footer">
+    <footer class="footer-section">
       <div class="footer-container container">
         <div class="footer-box">
           <a href="./index.html" class="logo-fst link"
@@ -291,7 +299,6 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <!-- Socials information -->
         <div class="socials-media">
           <p class="socials-footer-tittle">Social media</p>
           <ul class="socials-footer list">
@@ -353,30 +360,27 @@
             </li>
           </ul>
         </div>
-        <!-- Subscribe section -->
-        <section class="email-input">
-          <form class="subscribe-form" name="subscribe_form">
-            <div class="subscribe-form-box">
-              <label class="subscribe-form-field">
-                <span class="subscr-txt">Subscribe</span>
-                <input
-                  class="email-form-input"
-                  type="email"
-                  name="subscr-email"
-                  placeholder="E-mail"
-                />
-              </label>
-            </div>
-            <div class="subcribe-btn">
-              <button class="footer-subscr-btn" type="submit">
-                <svg class="send-icon" width="24" height="20">
-                  <use href="./images/icons.svg#send"></use>
-                </svg>
-                Subscribe
-              </button>
-            </div>
-          </form>
-        </section>
+        <form class="subscribe-form" name="subscribe_form">
+          <div class="subscribe-form-box">
+            <label class="subscribe-form-field">
+              <span class="subscr-txt">Subscribe</span>
+              <input
+                class="email-form-input"
+                type="email"
+                name="subscr-email"
+                placeholder="E-mail"
+              />
+            </label>
+          </div>
+          <div class="subcribe-btn">
+            <button class="footer-subscr-btn" type="submit">
+              Subscribe
+              <svg class="send-icon" width="24" height="20">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
