@@ -379,5 +379,156 @@
         </form>
       </div>
     </footer>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <strong class="modal-header"
+          >Leave your contacts and we will call you back</strong
+        >
+        <form class="modal-inputs" name="modal_form">
+          <label class="modal-form-lable" for="modal-name">Name</label>
+          <div class="form-wrapper">
+            <input class="form-input" type="text" name="name" id="modal-name" />
+            <svg class="modal-input-icon" width="12" height="12">
+              <use href="./images/icons.svg#name"></use>
+            </svg>
+          </div>
+          <label class="modal-form-lable" for="modal-phone">Phone</label>
+          <div class="form-wrapper">
+            <input
+              class="form-input"
+              type="tel"
+              name="phone"
+              id="modal-phone"
+            />
+            <svg class="modal-input-icon" width="12" height="12">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+          </div>
+          <label class="modal-form-lable" for="modal-email">Email</label>
+          <div class="form-wrapper">
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="modal-email"
+            />
+            <svg class="modal-input-icon" width="12" height="12">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+          </div>
+          <label class="modal-form-lable" for="modal-comment">Comment</label>
+          <div class="form-wrapper">
+            <textarea
+              class="form-input-text"
+              name="comment"
+              rows="6"
+              placeholder="Text input"
+              id="modal-comment"
+            ></textarea>
+          </div>
+          <label class="form-agreement">
+            <input
+              class="modal-chekbox"
+              type="checkbox"
+              name="moadl_agreement"
+            />
+            <span
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></span
+            >
+          </label>
+          <button class="modal-send-btn" type="submit">Send</button>
+        </form>
+        <button
+          aria-label="Close window"
+          class="modal-close-btn"
+          data-modal-close
+          type="button"
+        >
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Burger menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu inbtn">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu list">
+        <li><a href="./index.html" class="link">Studio</a></li>
+        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li>
+          <a href="tel:+110001111111" class="mobile-tel link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="mobile-addr link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <ul class="socials list">
+          <li class="socials-item">
+            <a class="socials-icons link" href="" rel="noopener noreferrer">
+              <svg class="icon" width="16" height="16">
+                <use
+                  href="./images/icons.svg#instagram"
+                  aria-label="instagram icon"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-icons link" href="" rel="noopener noreferrer">
+              <svg class="icon" width="16" height="16">
+                <use
+                  href="./images/icons.svg#twitter"
+                  aria-label="twitter icon"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-icons link" href="" rel="noopener noreferrer">
+              <svg class="icon" width="16" height="16">
+                <use
+                  href="./images/icons.svg#facebook"
+                  aria-label="facebook icon"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-icons link" href="" rel="noopener noreferrer">
+              <svg class="icon" width="16" height="16">
+                <use
+                  href="./images/icons.svg#linkedin"
+                  aria-label="linkedin icon"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <script src="./js/modal.js"></script>
+    <!-- Mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
