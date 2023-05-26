@@ -675,14 +675,13 @@ p {
 
 .subscribe-form {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 16px 24px;
   justify-content: center;
   width: 100%;
-  max-width: 453px;
 }
 
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 767px) {
   .subscribe-form {
     flex-direction: column;
   }
@@ -734,6 +733,8 @@ p {
   .subscribe-form {
     flex-wrap: nowrap;
     align-items: flex-end;
+    max-width: 498px;
+    /* flex-direction: column; */
   }
   .subcribe-btn {
     margin-bottom: 16px;
@@ -749,6 +750,9 @@ p {
   }
   .socials-media {
     margin-right: 80px;
+  }
+  .subscribe-form {
+    max-width: 498px;
   }
 }
 
