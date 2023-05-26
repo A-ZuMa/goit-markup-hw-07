@@ -745,14 +745,14 @@ p {
   .footer-container {
     gap: 0 0;
   }
-  .footer-box {
-    margin-right: 120px;
+  .footer-container {
+    justify-content: space-between;
   }
   .socials-media {
-    margin-right: 80px;
+    /* margin-right: 80px; */
   }
-  .subscribe-form {
-    max-width: 498px;
+  .subscribe-form-box {
+    width: 264px;
   }
 }
 
